@@ -3,15 +3,53 @@
 	<head>
 		<meta charset="utf-8">
 		<title>D3.chart Boilerplate Example</title>
+
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
+    
 		<script src="lib/d3.v3.js"></script>
     <script src="lib/d3.chart.js"></script>
+    <script src="lib/modernizr.min.js"></script>
 
-    <script src="../src/template.js"></script>
-    <script src="../src/template-extension.js"></script>
-    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="../src/base.js"></script>
+    <script src="../src/radar.js"></script>
+    <script src="../src/radar-extensions.js"></script>
+
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      body {
+        padding: 10px;
+      }
+      .container {
+        display: block;
+      }
+      .container svg {
+        border: 1px solid black;
+      }
+      #status {
+        color: blue;
+      }
+    </style>
 	</head>
 	<body>
-		<div id="vis"></div>
+    <div id="status">Mode changed to:</div>
+
+    <b>(fluid width, fixed height) w: 100%, h: 300px</b>
+		<div id="vis" class="container"></div>
+
+    <br>
+    <b>(fixed width, fixed height) w: 200, h: 200</b>
+    <div id="vis2" class="container"></div>
+
+    <br>
+    <b>(fixed width, fluid height) w: 300, h: 80%</b>
+    <div id="vis3" class="container"></div>
 		<script src="example.js"></script>
 	</body>
 </html>

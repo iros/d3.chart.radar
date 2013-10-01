@@ -1,17 +1,17 @@
 {
-  "name": "d3.chart.template",
+  "name": "d3.chart.radar",
   
-  "description": "A template for creating d3.chart based charts",
+  "description": "A d3.chart based radar chart",
 
   "version": "0.1.0",
   
-  "author": "Your Name",
+  "author": "Irene Ros",
   
   "license": "MIT Expat",
   
   "repository": {
     "type": "git",
-    "url": "git://github.com/yourOrgOrName/d3.chart.chart.git"
+    "url": "git://github.com/iros/d3.chart.radar.git"
   },
   
   "keywords": [
